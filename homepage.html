@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental company</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    
+    
+
+</head>
+<body>
+  <!--navigation bar on large screen-->
+  <nav>
+      <div class="nav1">
+          <div class="nav2"> 
+              <div class="ti1">AutoPlaza</div>
+              <div class="hidden"> 
+                  <div class="nav3">
+                      <div class="nav4">Vechicle Fleet</div>
+                      <div class="nav4">About Us</div>
+                      <div class="nav4">Contact Us</div>
+                  </div>
+              </div>
+              <div class="ti3">
+                  <div class="ti2"  data-toggle="modal" data-target="#loginModal">
+                      <ion-icon class="icon1" name="person-outline" ></ion-icon>
+                      Sign in
+                  </div>
+                  <div  class="icon" onclick="myFunction()">
+                      <div class="bar"></div>
+                  </div>
+              </div>   
+          </div>
+      </div>
+  </nav>
+
+  <!--navigation for small screens-->
+  <div class="topnav">
+      <div id="myLinks">
+        <a href="">Vechicle Fleet</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+      </div>
+  </div>
+
+  <!--log in form-->
+  <!--<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class=" modal-header border-bottom-0" >
+            <div type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <ion-icon class="icon4" name="close-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="modal-body">
+              <div class="form">
+                <p class="log">Log in</p>
+                <form class="login-form">
+                  <input type="text" placeholder="username"/>
+                  <input type="password" placeholder="password"/>
+                  <button>Sign in</button>
+                  <div class="message">
+                    <div>Not registered?</div>
+                    <div class="ab" data-toggle="modal" data-target="#signupModal">sign up</div>
+                  </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>-->
+
+  <!--sign up form-->
+  <!--<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class=" modal-header border-bottom-0" >
+          <div type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <ion-icon class="icon4" name="close-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="form">
+            <p class="log">Sign up</p>
+            <form class="register-form">
+              <input type="text" placeholder="email address"/>
+              <input type="password" placeholder="password"/>
+              <input type="password" placeholder="password"/>
+              <button>Sign up</button>
+              <div class="message">
+                <div>Not registered?</div>
+                <div class="ab" data-toggle="modal" data-target="#loginModal">sign up</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+
+    <!--landing page-->
+    <div class="h21">
+        Premium Car Rental
+    </div>
+
+    <!--search bar-->
+   <div class="search" >
+    <ion-icon class="icon2" name="search-outline" ></ion-icon>
+    <input type="text" placeholder="Your car is a search away......" class="search2">
+    <ion-icon class="icon3" name="close-outline"></ion-icon>
+   </div>
+
+   <!--hero 1mage-->
+   <img class="img1" src="images\lambo.png" alt="">
+
+
+   <div class="secondpage">
+      <div class="p2">
+        <div class="p21">
+          
+          <p class="p23">
+            <span class="p22">Auto Plaza</span> <br>
+            With our fleet of exclusive and modern cars, we have the opportunity to provide the best service in the car rental business. Contact us with your budget and we will deliver the best car. <br>
+            <button class="p221">contact us</button>
+          </p>
+            
+        </div>
+        <div class="p24">
+          <img class="img2" src="images\porsche.jpg" alt="">
+        </div>
+      </div>
+      <div class="numbers1">
+        <div>
+          <img class="img3" src="images\sclass.jpg" alt="">
+        </div>
+        
+        <div class="numbers">
+          <span class="h22">Our Numbers</span>
+          <i class="fa-solid fa-arrow-turn-down-right"></i>
+          <div class="num1">
+            <span>16</span><br>
+            <span>locations <br> nationwide</span>
+          </div>
+          <div class="num1">
+            <span>100+</span><br>
+            <span>Happy <br> Customers</span>
+          </div>
+          <div class="num1">
+            <span>50+</span><br>
+            <span>Customer <br> feedback</span>
+          </div>
+        </div>
+      </div>
+      
+   </div>
+</body>
+</html>
