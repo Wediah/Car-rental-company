@@ -313,6 +313,7 @@ body {
       margin-top: 9%;
       width: 95%;
     }
+
   }
   
 .secondpage {
@@ -321,12 +322,22 @@ body {
   border-radius: 5px;
 }
 
+.secondpage h1 {
+  font-family: Zen Dots;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
 .p2 {
   display: grid;
   justify-content: center;
   position: relative;
   grid-template-columns: repeat(12, 1fr);
+  margin-top: -100px;
 }
+
+
 
 .p21 {
   grid-row: 1;
@@ -346,6 +357,13 @@ body {
   z-index: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .p21 {
+    
+    grid-column: 0 / span 8;
+  }
+}
+
 .p22 {
   font-family: Zen Dots;
   text-align: left;
@@ -358,11 +376,21 @@ body {
   width: 50%;
 }
 
+@media screen and (max-width: 600px) {
+  .p23 {
+    font-size: 12px;
+    width: 80%;
+  }
+}
+
+
 .p24 {
   width: 100%;
   grid-column: 6 / -1;
   grid-row: 1;
 }
+
+
 
 .img2 {
   width: 80%;
@@ -370,9 +398,19 @@ body {
   margin-top: 50%;
 }
 
+@media screen and (max-width: 600px) {
+  .img2 {
+    width: 90%;
+    display: block;
+    margin-top: 80%;
+  }
+
+}
+
 .img3 {
   width: 30%;
   margin: 20px;
+  margin-left: 100px;
 }
 
 .p221{
@@ -385,31 +423,66 @@ body {
 }
 
 .h22 {
-  font-size: 20px;
+  font-size: 25px;
   font-family: Zen Dots;
-  margin-top: -60px;
-  margin-right: 25px;
+  margin-top: -40px;
+  
+  
 }
 
 .numbers {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-direction: row;
-  justify-content: right;
-  margin-top: -150px;
-  margin-right: 20px;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .numbers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }
 
 .num1 {
-  background-color: blue;
+  background-color: #FFFFFF;
   padding: 50px;
   border-radius: 10px;
   font-weight: 400;
 }
 
-.numbers1 {
-  display: grid;
+.num1:hover {
+  box-shadow: 0 20px 13px rgb(0 0 0 / 0.03), 0 8px 5px rgb(0 0 0 / 0.08);
 }
+
+.num2{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: Zen Dots;
+}
+
+
+.num3 {
+  font-family:sans-serif;
+  font-weight: bold;
+}
+
+.h22 img {
+  width: 10%;
+}
+
+.secondpage h2 {
+  font-family: Zen Dots;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+
+
   
 
 
