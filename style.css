@@ -320,6 +320,7 @@ body {
   background-color: #FFFFFF;
   width: 100%;
   border-radius: 5px;
+  padding-bottom: 20px;
 }
 
 .secondpage h1 {
@@ -335,6 +336,12 @@ body {
   position: relative;
   grid-template-columns: repeat(12, 1fr);
   margin-top: -100px;
+}
+
+@media screen and (max-width: 600px) {
+  .p2 {
+    margin-top: -50px;
+  }
 }
 
 
@@ -479,6 +486,67 @@ body {
   font-size: 30px;
   padding-top: 50px;
   text-align: center;
+}
+
+.range1{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.range1 img {
+  width: 278px;
+  height: 244px;
+  border-radius: 15px;
+  filter: brightness(50%);
+}
+
+@media screen and (max-width: 600px) {
+  .range1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sedans {
+  position: relative;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: transform .75s;
+}
+
+.sedans:hover{
+  transform: scale(1.10);
+}
+
+.sedans1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-family: Zen Dots;
+}
+
+.sedans2 {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: Zen Dots;
+  display: none;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.sedans:hover > .sedans2 {
+  display: block;
 }
 
 
