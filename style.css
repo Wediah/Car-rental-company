@@ -810,3 +810,71 @@ body {
   align-self: center;
   margin-right: 2px;
 }
+
+.benz {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.bmw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toyota {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.car {
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  flex-basis: 10%;
+}
+
+.car1 {
+  background-color:#FBBC09;
+  outline: none;
+  margin-top: 5px;
+  border-style: none;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.car img {
+  width: 278px;
+  height: 244px;
+  border-radius: 5px;
+}
+
+.sed1 {
+  font-family: Zen Dots;
+  font-size: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
