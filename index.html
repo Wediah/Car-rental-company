@@ -24,14 +24,14 @@
               <div class="hidden"> 
                   <div class="nav3">
                       <div class="nav4">Vechicle Fleet</div>
-                      <div class="nav4">About Us</div>
-                      <div class="nav4">Contact Us</div>
+                      <div class="nav4"><a href="about.html">About Us</a></div>
+                      <div class="nav4"><a href="contact.html">Contact Us</a></div>
                   </div>
               </div>
               <div class="ti3">
                   <div class="ti2"  data-bs-toggle="modal" data-bs-target="#loginModal">
                       <ion-icon class="icon1" name="person-outline" ></ion-icon>
-                      Sign in
+                      <span>Sign in</span>
                   </div>
                   <div  class="icon" onclick="myFunction()">
                       <div class="bar"></div>
@@ -45,61 +45,53 @@
   <div class="topnav">
       <div id="myLinks">
         <a href="">Vechicle Fleet</a>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
       </div>
   </div>
 
   <!--log in form-->
-  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class=" modal-header border-bottom-0" >
-            <div type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <ion-icon class="icon4" name="close-outline"></ion-icon>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="register-form">
+            <input type="text" placeholder="email address"/>
+            <input type="password" placeholder="password"/>
+            <button>Sign in</button>
+            <div class="message">
+              <div>Not registered?</div>
+              <div class="ab" data-bs-toggle="modal" data-bs-target="#signinModal">sign up</div>
             </div>
-          </div>
-          <div class="modal-body">
-              <div class="form">
-                <p class="log">Log in</p>
-                <form class="login-form">
-                  <input type="text" placeholder="username"/>
-                  <input type="password" placeholder="password"/>
-                  <button>Sign in</button>
-                  <div class="message">
-                    <div>Not registered?</div>
-                    <div class="ab" data-toggle="modal" data-target="#signupModal">sign up</div>
-                  </div>
-                </form>
-              </div>
-          </div>
+          </form>
         </div>
       </div>
+    </div>
   </div>
 
   <!--sign up form-->
-  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-        <div class=" modal-header border-bottom-0" >
-          <div type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <ion-icon class="icon4" name="close-outline"></ion-icon>
-          </div>
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="form">
-            <p class="log">Sign up</p>
-            <form class="register-form">
-              <input type="text" placeholder="email address"/>
-              <input type="password" placeholder="password"/>
-              <input type="password" placeholder="password"/>
-              <button>Sign up</button>
-              <div class="message">
-                <div>Not registered?</div>
-                <div class="ab" data-toggle="modal" data-target="#loginModal">sign up</div>
-              </div>
-            </form>
-          </div>
+          <form class="register-form">
+            <input type="text" placeholder="email address"/>
+            <input type="password" placeholder="Enter your password"/>
+            <input type="password" placeholder="Enter your password again"/>
+            <button>Sign up</button>
+            <div class="message">
+              <div>Already registered?</div>
+              <div class="ab" data-toggle="modal" data-target="#loginModal">sign in</div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -274,9 +266,9 @@
       <div class="con3">
         <h3>Contact Us</h3>
         <form action="">
-          <input type="text" id="fname" name="fname" placeholder="Full Name"><br>
-          <input type="text" id="email" name="email addess" placeholder="Your email address"> <br>
-          <textarea name="subject" id="subject" cols="30" rows="5" placeholder="Your Message"></textarea><br>
+          <input type="text" id="fname" name="fname" placeholder="Full Name">
+          <input type="text" id="email" name="email addess" placeholder="Your email address"> 
+          <textarea name="subject" id="subject" cols="30" rows="5" placeholder="Your Message"></textarea>
           
           <input class="Submit" type="submit" value="send now" >
         </form>
