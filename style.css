@@ -617,6 +617,14 @@ body {
     
 }
 
+@media screen and (max-width: 600px){
+  .reviews {
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 10px;
+  }
+}
+
 .review {
   background-color: #FBBC09;
   padding: 16px;
@@ -838,6 +846,12 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+  .benz, .bmw, .toyota {
+    flex-direction: column;
+  }
+}
+
 .bmw {
   display: flex;
   flex-direction: row;
@@ -868,6 +882,12 @@ body {
   padding: 5px;
   border-radius: 5px;
   flex-basis: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .car {
+    flex-basis: auto;
+  }
 }
 
 .car1 {
