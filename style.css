@@ -1,11 +1,20 @@
 nav{
-    position: sticky;
+    position: fixed;
     background-color: white;
     border-radius: 10px;
     z-index: 10;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     width: 100%;
     
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #FBBC09;
 }
 
 body {
@@ -120,17 +129,18 @@ body {
   .topnav {
     overflow: hidden;
     background-color: white;
-    position: sticky;
+    position: a;
     z-index: 10;
     border-radius: 10px
     ;
     width: 100%;
-    margin-top: 2px;
+    
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   }
   
   .topnav #myLinks {
     display: none;
+    margin-top: 100px;
   }
   
   .topnav a {
@@ -139,6 +149,10 @@ body {
     text-decoration: none;
     font-size: 17px;
     display: block;
+  }
+
+  .topnav a:hover {
+    color: #FBBC09;
   }
   
   .icon{
@@ -150,7 +164,7 @@ body {
     cursor: pointer;
     transition: transform .75s;
     position: relative;
-    width: 20px;
+    width: 35px;
     cursor: pointer;
     
   }
@@ -187,7 +201,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-
+    margin-top: 50px;
     text-align: center;
     padding-top: 4%;
 }
@@ -241,10 +255,7 @@ body {
     
 }
 
-#loginModal, #signupModal {
-    width: 30%;
-    margin: auto;
-}
+
 
 
 
@@ -258,14 +269,12 @@ body {
 
 
 
-  .form {
+  form {
     background: #FFFFFF;
-    max-width: 360px;
-    padding: 10px;
-    text-align: center;
+    
     
   }
-  .form input {
+  form input {
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -276,7 +285,7 @@ body {
     font-size: 14px;
     border-radius: 5px;
   }
-  .form button {
+  form button {
     
     outline: 0;
     background: #FBBC09;
@@ -290,17 +299,17 @@ body {
     cursor: pointer;
     border-radius: 10px;
   }
-  .form button:hover,.form button:active,.form button:focus {
+  form button:hover,.form button:active,.form button:focus {
     background: #e7ad0dc5;
   }
-  .form .message {
+  form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 15px;
     display: flex;
     justify-content: center;
   }
-  .form .message .ab {
+  form .message .ab {
     color: #FBBC09;
     cursor: pointer;
   }
@@ -330,6 +339,12 @@ body {
   width: 100%;
   border-radius: 5px;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .secondpage {
+    padding-top: 15px;
+  }
 }
 
 .secondpage h1 {
@@ -473,6 +488,8 @@ body {
 
 }
 
+
+
 .num1 {
   background-color: #FFFFFF;
   padding: 50px;
@@ -608,6 +625,14 @@ body {
     
 }
 
+@media screen and (max-width: 600px){
+  .reviews {
+    padding-left: 5px;
+    padding-right: 5px;
+    gap: 10px;
+  }
+}
+
 .review {
   background-color: #FBBC09;
   padding: 16px;
@@ -725,46 +750,53 @@ body {
   width: 100%;
   border-radius: 5px;
   padding-bottom: 40px;
-  margin-top: 20px;
+ 
 }
 
 .con3 {
   background-color: #FBBC09;
-  margin-top: 100px;
- padding: 40px;
-  font-size: 30px;
-  border-radius: 10px;
   width: 30%;
+  margin-top: 80px;
+  padding: 10px;
+  border-radius: 10px;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   .con3 {
-    margin-top: 20px;
-    width: 50%;
+    width: 70%;
   }
 }
 
-.con3 h3 {
+.con3 h3{
   font-family: Zen Dots;
   font-size: 20px;
-  
 }
 
-#fname, #email, #subject {
-  border-style: none;
-  outline: none;
-  margin-bottom: 5px;
-  width: 100%;
-  color: white;
+.con3 form {
   background-color:#FBBC09;
-  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
+.con3 form #fname, #email {
+  background-color: #FBBC09;
+  border-bottom: 2px solid #FFFFFF;
+  padding: 0px;
+  border-radius: 0px;
+  margin-top: 20px;
+}
+
+.con3 form textarea {
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  background-color:#FBBC09;
+}
 
 
 .Submit{
-  background-color: #FFFFFF;
+  background-color: #fefdfd;
   outline: none;
   border-style: none;
   padding: 8px;
@@ -820,6 +852,13 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   align-items: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .benz, .bmw, .toyota {
+    flex-direction: column;
+  }
 }
 
 .bmw {
@@ -854,6 +893,12 @@ body {
   flex-basis: 10%;
 }
 
+@media screen and (max-width: 600px) {
+  .car {
+    flex-basis: auto;
+  }
+}
+
 .car1 {
   background-color:#FBBC09;
   outline: none;
@@ -877,4 +922,54 @@ body {
   font-size: 30px;
   padding-top: 50px;
   text-align: center;
+}
+
+.wall {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+.wall img {
+  width: 100%;
+  height: 300px;
+  filter: brightness(50%);
+}
+
+@media screen and (max-width: 600px) {
+  .wall img {
+    height: 180px;
+  }
+}
+
+.wall .ab1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wall p {
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: small;
+  font-family: Zen Dots;
+}
+
+@media screen and (max-width: 600px) {
+  .wall p{
+    top:68%;
+  }
+}
+
+.wall a {
+  color: #FFFFFF;
+}
+
+.wall a:hover {
+  color: #FBBC09;
 }
