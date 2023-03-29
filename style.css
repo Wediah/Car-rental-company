@@ -357,6 +357,7 @@ body {
 @media screen and (max-width: 600px){
   .secondpage h1{
     font-size: 20px;
+    padding-bottom: 20px ;
   }
 }
 
