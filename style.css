@@ -848,49 +848,33 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   padding-left: 40px;
   padding-right: 40px;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 600px) {
-  .benz, .bmw, .toyota {
+  .benz {
     flex-direction: column;
   }
 }
 
-.bmw {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  align-items: center;
-  margin-top: 20px;
-}
 
-.toyota {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
 
 .car {
   background: white;
   padding: 5px;
   border-radius: 5px;
   flex-basis: 10%;
+  transition: transform .75s; 
+}
+
+.car:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: scale(1.10);
 }
 
 @media screen and (max-width: 600px) {
