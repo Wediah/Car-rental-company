@@ -1,7 +1,6 @@
 nav{
     position: fixed;
     background-color: white;
-    border-radius: 10px;
     z-index: 10;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     width: 100%;
@@ -129,10 +128,9 @@ body {
   .topnav {
     overflow: hidden;
     background-color: white;
-    position: a;
-    z-index: 10;
-    border-radius: 10px
-    ;
+    position: fixed;
+    z-index: 1;
+
     width: 100%;
     
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -201,9 +199,9 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    margin-top: 50px;
+    
     text-align: center;
-    padding-top: 4%;
+    padding-top: 10%;
 }
 
 .search {
@@ -935,7 +933,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .wall img {
-    height: 180px;
+    height: 230px;
   }
 }
 
@@ -946,20 +944,28 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 600px) {
+  .wall .ab1 {
+    top: 62%;
+  }
+}
+
 .wall p {
   position: absolute;
   top: 61%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: small;
+  font-weight: lighter;
   font-family: Zen Dots;
 }
 
 @media screen and (max-width: 600px) {
   .wall p{
-    top:68%;
+    top:75%;
   }
 }
+
 
 .wall a {
   color: #FFFFFF;
