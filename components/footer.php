@@ -13,19 +13,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-<div class="footer0">
-    <div class="footer">
-      <div class="title">AutoPlaza</div>
-      <div class="footer2">
-        <div>Help</div>
-        <div>Privacy</div>
-        <div class="footer3">
-          <ion-icon name="globe-outline"></ion-icon>
-          <div>ENG (UK)</div>
-        </div>
-      </div>
-    </div>
-  </div>
+
     
 </body>
 </html>
