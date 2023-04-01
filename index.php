@@ -47,7 +47,7 @@
           <p class="p23">
             <span class="p22">Auto Plaza</span> <br>
             With our fleet of exclusive and modern cars, we have the opportunity to provide the best service in the car rental business. Contact us with your budget and we will deliver the best car. <br>
-            <a href="contact.html"><button class="p221">contact us</button></a>
+            <a href="contact.php"><button class="p221">contact us</button></a>
           </p>
             
         </div>
