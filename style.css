@@ -58,6 +58,11 @@ body {
 
 .ti1 {
   font-family: Zen Dots;
+
+}
+
+.ti1 a {
+  text-decoration: none;
 }
 
 .ti1 , .ti2 {
@@ -572,6 +577,13 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .range1 img {
+    width: 250px;
+  height: 224px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .range1 {
     flex-direction: column;
     align-items: center;
@@ -597,6 +609,12 @@ body {
   transform: translate(-50%, -50%);
   font-size: 50px;
   font-family: Zen Dots;
+}
+
+@media screen and (max-width: 600px) {
+  .sedans1 {
+    font-size: 30px;
+  }
 }
 
 .sedans2 {
@@ -893,7 +911,7 @@ body {
   outline: none;
   margin-top: 5px;
   border-style: none;
-  padding: 8px;
+  padding: 2px;
   border-radius: 6px;
   font-weight: bold;
   text-align: center;
@@ -908,6 +926,48 @@ body {
   width: 278px;
   height: 244px;
   border-radius: 5px;
+}
+
+figcaption {
+  font-family: Zen Dots;
+  margin-top: 2px;
+}
+
+.details {
+  display: flex;
+  gap: 10px;
+}
+
+.detail {
+  display: flex;
+  gap: 3px;
+  align-self: center;
+  width: 100%;
+  padding-top: 12px;
+}
+
+.detail ion-icon {
+  
+  font-size: 20px;
+}
+
+.detail p {
+  font-size: small;
+  color:#878686;
+}
+
+.detail1 {
+  display: flex;
+  width: 100%;
+  
+  gap: 30px;
+  justify-items: center;
+}
+
+.detail1 p {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Zen Dots;
 }
 
 .sed1 {
