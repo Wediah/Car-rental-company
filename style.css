@@ -840,6 +840,7 @@ body {
 .footer0 {
   background-color: #FFFFFF;
   padding: 2px;
+  padding-bottom: 15px;
 }
 .footer {
   justify-content: space-between;
