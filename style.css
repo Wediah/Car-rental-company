@@ -1035,3 +1035,31 @@ figcaption {
 .wall a:hover {
   color: #FBBC09;
 }
+
+.questions {
+  margin: 4%;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-right:20% ;
+  padding-bottom: 15px;
+}
+
+.questions summary {
+  font-size: 19px;
+  font-family: Zen Dots;
+}
+
+.questions p {
+  font-size: 16;
+  font-weight: 400;
+}
+
+.fre {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  
+}
+
+
+
