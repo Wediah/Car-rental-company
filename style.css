@@ -1045,7 +1045,7 @@ figcaption {
 }
 
 .questions summary {
-  font-size: 19px;
+  font-size: 14px;
   font-family: Zen Dots;
 }
 
@@ -1061,5 +1061,14 @@ figcaption {
   font-family: Zen Dots;
 }
 
+.term li{
+  margin-top: 20px;
+}
+
+.terms {
+  font-size: 12px;
+  font-family: Zen Dots;
+  font-weight: bold;
+}
 
 
