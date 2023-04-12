@@ -305,6 +305,27 @@ body {
   form button:hover,.form button:active,.form button:focus {
     background: #e7ad0dc5;
   }
+
+  .ins {
+    outline: 0;
+    background: #FBBC09;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+.ins:hover {
+  color: #FFFFFF;
+  background: #e7ad0dc5;
+}
+
   form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
@@ -1074,3 +1095,29 @@ figcaption {
 }
 
 
+.lbd {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.mid h3 {
+  text-align: center;
+}
+
+.logs {
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-menu {
+  margin: 100px;
+}

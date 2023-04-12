@@ -19,6 +19,14 @@ window.onload = function () {
     }
 }
 
+function signUp() {
+  alert ("Account created successfully, log in to manage your account")
+}
+
+function directAc() {
+  location.href = "index.html";
+}
+
 
 $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");

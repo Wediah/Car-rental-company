@@ -1,54 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental</title>
+    <title>landing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"> 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
-<!--navigation bar on large screen-->
-  <nav>
-      <div class="nav1">
-          <div class="nav2"> 
-              <div class="ti1"> <a href="index.html">AutoPlaza</a> </div>
-              <div class="hidden"> 
-                  <div class="nav3">
-                      <div class="nav4"><a href ="fleet.html">Vechicle Fleet</a></div>
-                      <div class="nav4"><a href="about.html">About Us</a></div>
-                      <div class="nav4"><a href="contact.html">Contact Us</a></div>
-                  </div>
-              </div>
-              <div class="ti3">
-                  <div class="ti2"  data-bs-toggle="modal" data-bs-target="#loginModal">
-                      <ion-icon class="icon1" name="person-outline" ></ion-icon>
-                      <span>Sign in</span>
-                  </div>
-                  <div  class="icon" onclick="myFunction()">
-                      <div class="bar"></div>
-                  </div>
-              </div>   
-          </div>
-      </div>
-  </nav>
+<body class="lbd">
+    <div class="mid">
+        <h3>AutoPlaza®</h3>
+        <div class="logs">
+            <button class="ti2" data-bs-toggle="modal" data-bs-target="#loginModal">Sign in</button>
+            <button class="ti2" data-bs-toggle="modal" data-bs-target="#signinModal">Sign up</button>
+        </div>
+    </div>
 
-  <!--navigation for small screens-->
-  <div class="topnav">
-      <div id="myLinks">
-        <a href="fleet.html">Vechicle Fleet</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-      </div>
-  </div>
-
-  <!--log in form-->
+    <!--log in form-->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -60,7 +31,8 @@
           <form class="register-form">
             <input type="text" placeholder="email address"/>
             <input type="password" placeholder="password"/>
-            <button>Sign in</button>
+            <a href="landing.html" class="ins">Sign in 
+            </a>  
             <div class="message">
               <div>Not registered?</div>
               <div class="ab" data-bs-toggle="modal" data-bs-target="#signinModal">sign up</div>
@@ -84,7 +56,7 @@
             <input type="text" placeholder="email address"/>
             <input type="password" placeholder="Enter your password"/>
             <input type="password" placeholder="Enter your password again"/>
-            <button>Sign up</button>
+            <button onclick="signUp()">Sign up</button>
             <div class="message">
               <div>Already registered?</div>
               <div class="ab" data-toggle="modal" data-target="#loginModal">sign in</div>
@@ -94,204 +66,5 @@
       </div>
     </div>
   </div>
-
-    <!--landing page-->
-    <div class="h21">
-        Premium Car Rental
-    </div>
-
-    <!--search bar-->
-   <div class="search" >
-    <ion-icon class="icon2" name="search-outline" ></ion-icon>
-    <input type="text" placeholder="Your car is a search away......" class="search2">
-    <ion-icon class="icon3" name="close-outline"></ion-icon>
-   </div>
-
-   <!--hero 1mage-->
-   <img class="img1" src="images\lambo.png" alt="">
-
-   <!--Second page for the types of vehicles-->
-   <div class="secondpage">
-    <h2>Wide Range Of Vehicles</h2>
-    <div class="range1">
-      <div class="sedans">
-        <img src="images/benz1.webp" alt="">
-        <div class="sedans1">Sedans</div>
-        <div class="sedans2"><a href="sedans.html">view more</a></div>
-      </div>
-      <div class="sedans">
-        <img src="images/bmw1.jpg" alt="">
-        <div class="sedans1">SUVs</div>
-        <div class="sedans2"><a href="suvs.html">view more</a></div>
-      </div>
-      <div class="sedans">
-        <img src="images/sprinter.jpg" alt="">
-        <div class="sedans1">Vans</div>
-        <div class="sedans2"><a href="vans.html">view more</a></div>
-      </div>
-    </div>
-   </div>
-
-   <!--third page which talks about our company-->
-   <div class="secondpage">
-    <h1>About US</h1>
-      <div class="p2">
-        <div class="p21">
-          
-          <p class="p23">
-            <span class="p22">Auto Plaza</span> <br>
-            With our fleet of exclusive and modern cars, we have the opportunity to provide the best service in the car rental business. Contact us with your budget and we will deliver the best car. <br>
-            <a href="contact.html"><button class="p221">contact us</button></a>
-          </p>
-            
-        </div>
-        <div class="p24">
-          <img class="img2" src="images\porsche.jpg" alt="">
-        </div>
-      </div>
-      
-      
-        
-        
-        <div class="numbers">
-            <span class="h22">Our Numbers </span>
-            <ion-icon class="num4" name="return-down-forward-outline"></ion-icon>
-            <ion-icon class="num5" name="arrow-down-outline"></ion-icon>
-          
-          <div class="num1">
-            <span class="num2">16</span><br>
-            <span class="num3">locations  <br> nationwide</span>
-          </div>
-          <div class="num1">
-            <span class="num2">100+</span><br>
-            <span class="num3">Happy <br> Customers</span>
-          </div>
-          <div class="num1">
-            <span class="num2">50+</span><br>
-            <span class="num3">Customer <br> feedback</span>
-          </div>
-        </div>
-      
-   </div>
-
-   
-  <!--forth page about the reviews we get from customers-->
-   <div class="secondpage">
-    <h2>Stories Behind The Wheels</h2>
-
-    <div class="reviews">
-      <div class="review">
-        <div class="rev1">
-          <p class="rev2">Kofi Ansah</p>
-          <ion-icon class="rev3" name="chatbox-ellipses-outline"></ion-icon>
-        </div>
-        <p>Best service in Accra, excellent service and staff. I would rate them 10/10</p>
-      </div>
-
-      <div class="review">
-        <div class="rev1">
-          <p class="rev2">Kofi Ansah</p>
-          <ion-icon class="rev3" name="chatbox-ellipses-outline"></ion-icon>
-        </div>
-        <p>Best service in Accra, excellent service and staff. I would rate them 10/10</p>
-      </div>
-
-      <div class="review">
-        <div class="rev1">
-          <p class="rev2">Kofi Ansah</p>
-          <ion-icon class="rev3" name="chatbox-ellipses-outline"></ion-icon>
-        </div>
-        <p>Best service in Accra, excellent service and staff. I would rate them 10/10</p>
-      </div>
-
-      <div class="review">
-        <div class="rev1">
-          <p class="rev2">Kofi Ansah</p>
-          <ion-icon class="rev3" name="chatbox-ellipses-outline"></ion-icon>
-        </div>
-        <p>Best service in Accra, excellent service and staff. I would rate them 10/10</p>
-      </div>
-
-      <div class="review">
-        <div class="rev1">
-          <p class="rev2">Kofi Ansah</p>
-          <ion-icon class="rev3" name="chatbox-ellipses-outline"></ion-icon>
-        </div>
-        <p>Best service in Accra, excellent service and staff. I would rate them 10/10</p>
-      </div>
-
-      <div class="review">
-        <div class="rev1">
-          <p class="rev2">Kofi Ansah</p>
-          <ion-icon class="rev3" name="chatbox-ellipses-outline"></ion-icon>
-        </div>
-        <p>Best service in Accra, excellent service and staff. I would rate them 10/10</p>
-      </div>
-    </div>
-    <div class="send">
-      <input class="send1" type="text" placeholder="Add a review">
-      <ion-icon class="send2" name="send"></ion-icon>
-    </div>
-   </div>
-
-   <!--fifth page for contact-->
-   <div class=" contact">
-
-    <div class="con1">
-      <div class="con2">
-        <p class="hello">Hello,</p>
-        <p class="get">LETS GET IN TOUCH</p>
-        <div class="info"> 
-          <ion-icon class="info1" name="location"></ion-icon>
-          <p>Accra, Ghana</p>
-        </div>
-        <div class="info">
-          <ion-icon class="info1" name="call"></ion-icon>
-          <p>020022000</p>
-        </div>
-        <div class="info">
-          <ion-icon class="info1" name="mail"></ion-icon>
-          <p>info@autoplaza.com</p>
-        </div>
-        <div class="social">
-          <ion-icon name="logo-instagram"></ion-icon>
-          <ion-icon name="logo-facebook"></ion-icon>
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </div>
-      </div>
-      <div class="con3">
-        <h3>Contact Us</h3>
-        <form action="">
-          <input type="text" id="fname" name="fname" placeholder="Full Name">
-          <input type="text" id="email" name="email addess" placeholder="Your email address"> 
-          <textarea name="subject" id="subject" cols="30" rows="5" placeholder="Your Message"></textarea>
-          
-          <input class="Submit" type="submit" value="send now" >
-        </form>
-      </div>
-    </div>
-
-  </div>
-  <!--footer-->
-  <div class="footer0">
-    <div class="footer">
-      <div class="title">AutoPlaza®</div>
-      <div class="footer2">
-        <div><a href="help.html">Help</a> </div>
-        <div><a href="privacy.html">Privacy</a> </div>
-        <div>copyright ©2023</div>
-        <div class="footer3">
-          <ion-icon name="globe-outline"></ion-icon>
-          <div>ENG (UK)</div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
 </body>
 </html>
-  
-
-   
