@@ -23,9 +23,7 @@ function signUp() {
   alert ("Account created successfully, log in to manage your account")
 }
 
-//function signin() {
-  //alert ("Account created successfully, log in to manage your account")
-//}
+
 
 function directAc() {
   location.href = "index.html";
