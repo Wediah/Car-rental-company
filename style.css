@@ -1120,3 +1120,69 @@ figcaption {
 .dropdown-menu {
   margin: 100px;
 }
+
+.main-pro {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 120px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-pro {
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 60px;
+  }
+}
+
+.dp {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .dp {
+    width: 140px;
+    height: 140px;
+  }
+
+  .pro {
+    margin-top: 5px;
+  }
+}
+
+.det {
+  display: flex;
+  gap:5px;
+}
+
+.pro {
+  flex-direction: column;
+  margin-top: 5px;
+  font-size: small;
+  gap: 1px;
+}
+
+.edit {
+  font-size: 20px;
+  justify-self: center;
+}
+
+#edit {
+  color: red;
+  cursor: pointer;
+}
+
+.history {
+  text-align: center;
+  margin-top: 20px;
+  font-family: Zen Dots;
+  font-size: 20px;
+}
+
+#history {
+  margin-bottom: 50px;
+}

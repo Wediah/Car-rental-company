@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!--navigation bar on large screen-->
+    <nav>
+        <div class="nav1">
+            <div class="nav2"> 
+                <div class="ti1"> <a href="landing.html">AutoPlaza</a> </div>
+                <div class="hidden"> 
+                    <div class="nav3">
+                        <div class="nav4"><a href ="fleet.html">Vechicle Fleet</a></div>
+                        <div class="nav4"><a href="about.html">About Us</a></div>
+                        <div class="nav4"><a href="contact.html">Contact Us</a></div>
+                    </div>
+                </div>
+                <div class="ti3">
+                <div>
+                    <div class="ti2" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >
+                        <ion-icon class="icon1" name="person-outline" ></ion-icon>
+                        <span>Kofi Ansah</span>
+                    </div>
+                    <!--drop down-->
+                    <ul class="dropdown-menu p-1 mt-1" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="acc.html">Account</a></li>
+                        <li><a class="dropdown-item" href="index.html">Log out</a></li>
+                        
+                    </ul>
+                </div>
+
+                    <div  class="icon" onclick="myFunction()">
+                        <div class="bar"></div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </nav>
+
+    <!--navigation for small screens-->
+    <div class="topnav">
+        <div id="myLinks">
+        <a href="fleet.html">Vechicle Fleet</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="main-pro">
+        <div>
+            <img class="dp" src="images\dp.jpg" alt="profile">
+        </div>
+        <div class="pro">
+            <div class="det">
+                <p>Name:</p>
+                <p>Kofi Ansah</p>
+            </div>
+            <div class="det ">
+                <p>Email:</p>
+                <p>KofiAnsah@gmailcom</p>
+            </div>
+            <div class="det">
+                <p>Address:</p>
+                <p>14th Street southwest</p>
+            </div>
+            <div class="det">
+                <p>Phone:</p>
+                <p>233 20 486 8578</p>
+            </div>
+            <div class="det" id="edit" data-bs-toggle="modal" data-bs-target="#passwordModal">
+                <p>Change password</p>
+            </div>
+            <div class="det" id="edit" data-bs-toggle="modal" data-bs-target="#profileModal">
+                <ion-icon class="edit" name="create-outline"></ion-icon>
+                <p>Edit profile</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Change Password</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="register-form">
+                <input type="password" placeholder="password"/>
+                <input type="password" placeholder="enter password again"/>
+                <a onclick="passwordChange()" href="acc.html" class="ins">Save changes
+                </a>  
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Change Password</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="register-form">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="email">
+                <input type="text" placeholder="address"/>
+                <input type="text" placeholder="phone"/>
+                <a onclick="profileChange()" href="acc.html" class="ins">Save changes
+                </a>  
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <h4 class="history">Booking History</h4>
+
+    <div class="benz" id="history">
+        <div class="car">
+          <img src="images\Images of cars\mecedes sedans\A class sedan.jpg" alt="Class A Sedan"> 
+          <figcaption>Mecedes A class</figcaption>
+          <div class="details">
+          <div class="detail">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>4 people</p>
+          </div>
+          <div class="detail">
+          <ion-icon name="cog-outline"></ion-icon>
+          <p>automatic</p>
+          </div>
+        </div>
+        <div class="details">
+          <div class="detail">
+          <ion-icon name="speedometer-outline"></ion-icon>
+          <p>6.5km/1 Litre</p>
+          </div>
+          <div class="detail">
+          <ion-icon name="color-fill-outline"></ion-icon>
+          <p>petrol</p>
+          </div>
+        </div>
+        <hr>
+        <div class="detail1">
+          <p>paid $330.00 for 3 days</p>
+        </div>
+        </div>
+        <div class="car">
+          <img src="images\Images of cars\mecedes sedans\C class sedan.jpg" alt="Class C Sedan">   
+           <figcaption>Mecedes C class</figcaption>
+           <div class="details">
+          <div class="detail">
+          <ion-icon name="people-outline"></ion-icon>
+          <p>4 people</p>
+          </div>
+          <div class="detail">
+          <ion-icon name="cog-outline"></ion-icon>
+          <p>automatic</p>
+          </div>
+          </div>
+          <div class="details">
+          <div class="detail">
+          <ion-icon name="speedometer-outline"></ion-icon>
+          <p>6.5km/1 Litre</p>
+          </div>
+          <div class="detail">
+          <ion-icon name="color-fill-outline"></ion-icon>
+          <p>petrol</p>
+          </div>
+          </div>
+          <hr>
+          <div class="detail1">
+            <p>paid $5000.00 for 10 days</p>
+          </div>
+        </div>
+
+    
+        
+    </div> 
+    
+</body>
+</html>

@@ -23,6 +23,14 @@ function signUp() {
   alert ("Account created successfully, log in to manage your account")
 }
 
+function passwordChange() {
+  alert ("password changed successfully.")
+}
+
+function profileChange() {
+  alert ("profile edited successfully.")
+}
+
 
 
 function directAc() {
