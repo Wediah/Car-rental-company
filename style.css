@@ -1186,3 +1186,10 @@ figcaption {
 #history {
   margin-bottom: 50px;
 }
+
+.adb {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Zen Dots;
+}
