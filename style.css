@@ -1187,9 +1187,125 @@ figcaption {
   margin-bottom: 50px;
 }
 
+.content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .adb {
   padding-top: 100px;
   text-align: center;
   font-size: 20px;
   font-family: Zen Dots;
+}
+
+.fbx {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-items: center;
+    justify-content: center;
+  }
+  .fbx {
+    flex-direction: column;
+    justify-items: center;
+  }
+}
+
+.firstbx {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.carb {
+  width: 50px;
+  cursor: pointer;
+}
+
+.carbr1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.carbr {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.ccb {
+  border-radius: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+
+.ccb1 {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #FBBC09;
+  color: #FFFFFF;
+}
+
+.cart {
+  display: flex;
+  font-family: Zen Dots;
+  font-size: small;
+  justify-content: center;
+}
+
+.cm {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  
+  width: 250px;
+}
+
+.mtb {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  justify-content: center;
+}
+
+.mtbs {
+  border-radius: 5px;
+}
+
+.mtbs:hover {
+  background-color: #FBBC09;
+  color: #FFFFFF;
+  border: #FFFFFF;
+}
+
+.pc {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pc2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.crnme {
+  text-align: center;
+}
+
+.carstatus {
+  display: flex;
+  flex-direction: column;
 }
