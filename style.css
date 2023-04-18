@@ -1336,3 +1336,19 @@ figcaption {
   flex-direction: column;
   gap: 10px;
 }
+
+.logs1 {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.logs1:hover {
+  background: #FBBC09;
+  color: #FFFFFF;
+  border: #fefdfd;
+}
+
