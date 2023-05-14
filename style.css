@@ -1352,3 +1352,19 @@ figcaption {
   border: #fefdfd;
 }
 
+.payment {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+.payment img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
